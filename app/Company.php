@@ -30,4 +30,14 @@ class Company extends Model
     {
         return $this->hasMany(CompanyPackages::class, 'company_id', 'company_id')->latest()->first();
     }
+
+    public function packages()
+    {
+        return $this->hasMany(CompanyPackages::class, 'company_id', 'company_id');
+    }
+    public function payments()
+    {
+        return $this->hasMany(CompanyPayments::class, 'company_id', 'company_id');
+    }
+
 }
