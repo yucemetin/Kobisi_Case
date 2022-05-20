@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Company;
-use App\CompanyPackages;
-use App\Package;
+use App\Models\Company;
+use App\Models\CompanyPackages;
+use App\Models\Package;
 use http\Env\Response;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
