@@ -15,7 +15,7 @@ class CompanyPaymentsFactory extends Factory
     {
         return [
             'is_paid' => $this->faker->boolean(),
-            'amount' =>$this->faker->randomFloat(9,499),
+            'amount' =>$this->faker->randomFloat(10,9,499),
         ];
     }
 }

@@ -44,8 +44,8 @@ class CompanyPackageController extends Controller
         $current = Carbon::now();
         $end = Carbon::now();
         $validatedData = Validator::make($request->all(), [
-            'company_id' => 'exists:App\Company,company_id',
-            'packages_id' => 'exists:App\Package,packages_id',
+            'company_id' => 'exists:App\Models\Company,company_id',
+            'packages_id' => 'exists:App\Models\Package,packages_id',
         ]);
 
         if ($validatedData->fails()) {

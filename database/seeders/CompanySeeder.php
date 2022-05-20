@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use App\Company;
-use App\CompanyPackages;
-use App\CompanyPayments;
+use App\Models\Company;
+use App\Models\CompanyPackages;
+use App\Models\CompanyPayments;
 use Illuminate\Database\Seeder;
 
 class CompanySeeder extends Seeder
